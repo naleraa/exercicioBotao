@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(201, 158, 241);
+}
+/* TITULO */
+h1{
+    color: white;
+    text-align: center;
+}
+/* TEXTO */
+h3{
+    color: white;
+    text-align: center; 
+}
+.imagens{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+img {
+    margin-right: 145px;
+  }
+hr{
+    border-color: white;
+}
+
+
+.button{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+#filme1{ 
+    padding: 20px;
+    left: 50px;
+    right: 50px;
+    text-align: center;
+    margin: 140px;
+    border-radius: 20px;
+}
+#filme2{
+    padding: 20px;
+    left: 50px;
+    right: 50px;
+    text-align: center;
+    margin: 140px;
+    border-radius: 20px;
+}
+#filme3{
+    padding: 20px;
+    left: 50px;
+    right: 50px;
+    text-align: center;
+    margin: 155px;
+    border-radius: 20px;
+}
+#filme4{
+    padding: 20px;
+    left: 50px;
+    right: 50px;
+    text-align: center;
+    margin: 155px;
+    border-radius: 20px;
+}

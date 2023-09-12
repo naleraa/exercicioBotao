@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Séries</title>
+    <link rel="stylesheet" href="filmes.css">
+</head>
+<body>
+    <h1>Meus Filmes Favoritos!</h1>
+    <hr>
+    <br>
+    <div class="imagens">
+        <div class="img"><img src="imagens/imagem1.webp" alt="Imagem 1" width="257px"></div>
+        <div class="img"><img src="imagens/imagem2.jpg" alt="Imagem 2" width="247px"></div>
+        <div class="img"><img src="imagens/imagem3.webp" alt="Imagem 3" width="250px"></div>
+        <div class="img"><img src="imagens/imagem4.webp" alt="Imagem 4" width="250px"></div>
+    </div>
+    
+    <div class="button">
+        <button class="botao1" id="filme1"> Filme 1 </button>
+        <button class="botao2" id="filme2"> Filme 2 </button>
+        <button class="botao3" id="filme3"> Filme 3 </button>
+        <button class="botao4" id="filme4"> Filme 4 </button>
+    </div>
+
+    <div id="dados"></div>
+
+    <script>
+        // Filme 1
+        const film1 = {
+            "Nome": "De Repente 30",
+            "Sinopse": "Jenna Rink é uma garota que está descontente com sua própria idade. Em seu 13º aniversário, ela faz um pedido: virar adulta. O pedido milagrosamente se torna realidade e, no dia seguinte, Jenna acorda com 30 anos de idade.",
+            "Ano": "2004"
+        };
+
+        // Filme 2
+        const film2 = {
+            "Nome": "Avatar",
+            "Sinopse": "No exuberante mundo alienígena de Pandora vivem os Na'vi, seres que parecem ser primitivos, mas são altamente evoluídos. Como o ambiente do planeta é tóxico, foram criados os avatares, corpos biológicos controlados pela mente humana que se movimentam livremente em Pandora. Jake Sully, um ex-fuzileiro naval paralítico, volta a andar através de um avatar e se apaixona por uma Na'vi. Esta paixão leva Jake a lutar pela sobrevivência de Pandora.",
+            "Ano": "2009"
+        };
+
+        // Filme 3
+        const film3 = {
+            "Nome": "Para Todos os Garotos que Já Amei",
+            "Sinopse": "Baseado no romance de Jenny Han, Para Todos os Garotos que Já Amei segue as aventuras amorosas de Lara Jean (Lana Condor). No ensino médio, Lara tem um hábito de escrever cartas para todos os garotos que já gostou de alguma forma, de modo que ela possa liberar o amor não correspondido ou que nunca foi falado para a pessoa. Todas as cartas que já escreveu são guardadas em uma caixa. Um dia sua irmã mais nova acha as cartas e decide mandar para todos os destinatários, afim de ajudar a irmã a ser correspondida por um deles ou apenas receber uma mensagem. Na manhã seguinte, Lara é confrontada por Peter Kavinsky (Noah Centineo), que recebeu uma de suas cartas, mas se não fosse só ele, Josh e Lucas também vão falar com ela. Em um momento de desespero ela beija Peter para despistar um dos garotos. Ciente que suas cartas foram mandadas, Lara entra em pânico, mas Peter percebe que sua ex-namorada começou a ficar com ciúmes dele. Então ele decide fazer um pacto com Lara para que eles forjem um namoro para que Peter volte com sua ex. Mas será que o amor dos dois vai florescer em meio de mentirinhas?",
+            "Ano": "2020"
+        };
+
+        // Filme 4
+        const film4 = {
+            "Nome": "Meu Primeiro Amor",
+            "Sinopse": "Vada Sultenfuss é uma garota de 11 anos obcecada pela morte. Sua mãe morreu quando ela nasceu e seu pai, Harry Sultenfuss, é um agente funerário distante. Vada é apaixonada por Jake Bixler, seu professor de inglês, e é muito amiga de Thomas J. Sennett, um garoto alérgico a tudo. Quando Harry contrata a maquiadora Shelly DeVoto para os funerais e se apaixona por ela, Vada se sente rejeitada e faz de tudo para separá-los.",
+            "Ano": "1992"
+        };
+
+        const filme1Button = document.getElementById("filme1");
+        const filme2Button = document.getElementById("filme2");
+        const filme3Button = document.getElementById("filme3");
+        const filme4Button = document.getElementById("filme4");
+        const dadosDiv = document.getElementById("dados");
+
+        // Filme 1
+        filme1Button.addEventListener("click", () => {
+            dadosDiv.innerHTML = `
+            <h3>Nome: ${film1.Nome}</h3>
+            <h3>Sinopse: ${film1.Sinopse}</h3>
+            <h3>Ano: ${film1.Ano}</h3>
+            `;
+        });
+
+        // Filme 2
+        filme2Button.addEventListener("click", () => {
+            dadosDiv.innerHTML = `
+            <h3>Nome: ${film2.Nome}</h3>
+            <h3>Sinopse: ${film2.Sinopse}</h3>
+            <h3>Ano: ${film2.Ano}</h3>
+            `;
+        });
+
+        // Filme 3
+        filme3Button.addEventListener("click", () => {
+            dadosDiv.innerHTML = `
+            <h3>Nome: ${film3.Nome}</h3>
+            <h3>Sinopse: ${film3.Sinopse}</h3>
+            <h3>Ano: ${film3.Ano}</h3>
+            `;
+        });
+
+        // Filme 4
+        filme4Button.addEventListener("click", () => {
+            dadosDiv.innerHTML = `
+            <h3>Nome: ${film4.Nome}</h3>
+            <h3>Sinopse: ${film4.Sinopse}</h3>
+            <h3>Ano: ${film4.Ano}</h3>
+            `;
+        });
+    </script>
+</body>
+</html>
